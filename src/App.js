@@ -102,9 +102,10 @@ class App extends React.Component {
     orderCheckout = () => {
       const checkout = this.state.checkout
 
-      checkout.splice(0, checkout.length);
+      let newCheckout = checkout.splice(0, checkout.length);
 
       this.setState({
+        checkout: newCheckout,
         page: 5
       })
 
