@@ -1,0 +1,140 @@
+{
+    "le_classique" : {
+        "kebab": {
+            "type": "pain",
+            "meat": "viande",
+            "sauces": [
+                {
+                    "isSelected": true,
+                    "sauceName": "Blanche"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Harissa"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Ketchup"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Curry"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "BBQ"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Andalouse"
+                }
+            ],
+            "vegetables": [
+                {
+                    "isSelected": true,
+                    "vegetableName": "Salade"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Tomate"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Oignons"
+                }
+            ]
+        }
+    },
+    "le_vege" : {
+        "kebab": {
+            "type": "pain",
+            "meat": "tofu",
+            "sauces": [
+                {
+                    "isSelected": true,
+                    "sauceName": "Blanche"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Harissa"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Ketchup"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Curry"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "BBQ"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Andalouse"
+                }
+            ],
+            "vegetables": [
+                {
+                    "isSelected": false,
+                    "vegetableName": "Salade"
+                },
+                {
+                    "isSelected": false,
+                    "vegetableName": "Tomate"
+                },
+                {
+                    "isSelected": false,
+                    "vegetableName": "Oignons"
+                }
+            ]
+        }
+    },
+    "le_BBQ" : {
+        "kebab": {
+            "type": "pain",
+            "meat": "viande",
+            "sauces": [
+                {
+                    "isSelected": false,
+                    "sauceName": "Blanche"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Harissa"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Ketchup"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Curry"
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "BBQ"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Andalouse"
+                }
+            ],
+            "vegetables": [
+                {
+                    "isSelected": true,
+                    "vegetableName": "Salade"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Tomate"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Oignons"
+                }
+            ]
+        }
+    }
+}
