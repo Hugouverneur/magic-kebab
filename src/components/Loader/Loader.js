@@ -1,6 +1,6 @@
-const Loader = ({ Order }) => {
+const Loader = () => {
     return (
-        <div>Commande en cours veuillez patientez...</div>
+        <div>Nous préparons votre commande...</div>
     );
 }
 
