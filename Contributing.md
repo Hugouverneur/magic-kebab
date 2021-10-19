@@ -26,6 +26,9 @@
 [7] Components / Checkout.Js
 - Composant du panier, va vérifier les sauces et légumes selectionnés va ensuite créer une chaîne de caractères pour récapituler la composition du kebab pour l'ajouter
 
+[8] Components / Loader.Js
+- Composant utilisé quand la commande est validé, va afficher la page de chargement
+
 ### Les fonctions dans App.JS
 Dans notre state nous avons : l'objet **kebab** qui va contenir toutes les informations du kebab, **checkout** qui est le panier, **page** qui va permettre d'afficher l'étape suivante après validation d'une étape, **error** qui va nous permettre d'initialiser un message d'erreur si nécessaire
 
@@ -56,3 +59,7 @@ Dans notre state nous avons : l'objet **kebab** qui va contenir toutes les infor
 [7] setQuantity
 - Va permettre d'augmenter la quantité d'un kebab sur le point d'être commandé, utilise **l'id** du kebab et la **quantité** -1 ou +1 selon si on veut en enlever ou en ajouter, va rechecher l'élement dans checkout grâce à son id et va mettre à jour la quantité
 - (Mise à jour du state checkout)
+
+[8] orderCheckout
+- Va afficher la page de chargement avec un délais, et va vider le checkout
+- (Mise à jour du state checkout et page)
