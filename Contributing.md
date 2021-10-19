@@ -27,7 +27,7 @@
 - Composant du panier, va vérifier les sauces et légumes selectionnés va ensuite créer une chaîne de caractères pour récapituler la composition du kebab pour l'ajouter
 
 ### Les fonctions dans App.JS
-- Dans notre state nous avons : l'objet **kebab** qui va contenir toutes les informations du kebab, **checkout** qui est le panier, **page** qui va permettre d'afficher l'étape suivante après validation d'une étape, **error** qui va nous permettre d'initialiser un message d'erreur si nécessaire
+Dans notre state nous avons : l'objet **kebab** qui va contenir toutes les informations du kebab, **checkout** qui est le panier, **page** qui va permettre d'afficher l'étape suivante après validation d'une étape, **error** qui va nous permettre d'initialiser un message d'erreur si nécessaire
 
 [1] selectKebab
 - Va initialiser le pain choisit pour la kebab, en mettant à jour l'étape de la commande grâce à page, la fonction est utilisée par **KebabType.Js**
