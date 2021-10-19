@@ -8,6 +8,7 @@ import Sauce from './components/Sauce/Sauce';
 import KebabConfirmation from './components/KebabConfirmation/KebabConfirmation';
 import Checkout from './components/Checkout/Checkout';
 import DefaultKebab from './components/DefaultKebab/DefaultKebab';
+import Loader from './components/Loader/Loader';
 
 class App extends React.Component {
     constructor(props){
@@ -98,6 +99,22 @@ class App extends React.Component {
       })
     }
 
+    orderCheckout = () => {
+      const checkout = this.state.checkout
+
+      checkout.splice(0, checkout.length);
+
+      this.setState({
+        page: 5
+      })
+
+      setTimeout(() => { 
+        this.setState({
+          page: 0
+        })
+      }, 3000);
+    }
+
     render() {
       let component
       let checkout = this.state.checkout
@@ -120,13 +137,16 @@ class App extends React.Component {
         case 4:
           component = <KebabConfirmation kebabConfirmation={this.kebabConfirmation} kebab={this.state.kebab} />
           break;
+        case 5:
+          component = <Loader Order={this.orderCheckout} />
+          break;
         default:
           component = <div>Erreur de chargement</div>
           console.log("Erreur")
       }
 
       if(checkout.length !== 0) {
-        showCheckout = <Checkout checkout={this.state.checkout} deleteKebab={this.deleteKebab} setQuantity={this.setQuantity} />
+        showCheckout = <Checkout checkout={this.state.checkout} deleteKebab={this.deleteKebab} setQuantity={this.setQuantity} Order={this.orderCheckout} />
       }
 
       return (
