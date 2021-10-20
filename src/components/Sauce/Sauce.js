@@ -37,33 +37,35 @@ const Sauce = ({selectSauces, tooManySauce}) => {
     ]
 
     return (
-        <div className="">
+        <div className="column_center">
             <h2>Quelques sauces ? (2 sauces MAX)</h2>
-            <button onClick={() => setBlanche((blanche)? false : true)}>
-                <img alt="" src=""/>
-                <p>Blanche</p>
-            </button>
-            <button onClick={() => setHarissa((harissa)? false : true)}>
-                <img alt="" src=""/>
-                <p>Harissa</p>
-            </button>
-            <button onClick={() => setAndalouse((andalouse)? false : true)}>
-                <img alt="" src=""/>
-                <p>Andalouse</p>
-            </button>
-            <button onClick={() => setBBQ((BBQ)? false : true)}>
-                <img alt="" src=""/>
-                <p>BBQ</p>
-            </button>
-            <button onClick={() => setKetchup((ketchup)? false : true)}>
-                <img alt="" src=""/>
-                <p>Ketchup</p>
-            </button>
-            <button onClick={() => setCurry((curry)? false : true)}>
-                <img alt="" src=""/>
-                <p>Curry</p>
-            </button>
-            <button onClick={() => selectSauces(selectedSauces)}>
+            <div className="inline_blocks">
+                <button className="block_btn" onClick={() => setBlanche((blanche)? false : true)}>
+                    <img width="86px" alt="sauce blanche" src={require('../../assets/icons/blanche.png').default} />
+                    <p>Blanche</p>
+                </button>
+                <button className="block_btn" onClick={() => setHarissa((harissa)? false : true)}>
+                    <img width="86px" alt="sauce harissa" src={require('../../assets/icons/harissa.png').default} />
+                    <p>Harissa</p>
+                </button>
+                <button className="block_btn" onClick={() => setAndalouse((andalouse)? false : true)}>
+                    <img width="86px" alt="sauce andalouse" src={require('../../assets/icons/anda.png').default} />
+                    <p>Andalouse</p>
+                </button>
+                <button className="block_btn" onClick={() => setBBQ((BBQ)? false : true)}>
+                    <img width="86px" alt="sauce bbq" src={require('../../assets/icons/sbbq.png').default} />
+                    <p>BBQ</p>
+                </button>
+                <button className="block_btn" onClick={() => setKetchup((ketchup)? false : true)}>
+                    <img width="86px" alt="ketchup" src={require('../../assets/icons/ketchup.png').default} />
+                    <p>Ketchup</p>
+                </button>
+                <button className="block_btn" onClick={() => setCurry((curry)? false : true)}>
+                    <img width="86px" alt="sauce curry" src={require('../../assets/icons/curry.png').default} />
+                    <p>Curry</p>
+                </button>
+            </div>
+            <button className="continu_btn" onClick={() => selectSauces(selectedSauces)}>
                 <p>Continuer</p>
             </button>
             <p>{tooManySauce}</p>
