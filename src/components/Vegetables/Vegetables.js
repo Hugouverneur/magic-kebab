@@ -20,19 +20,27 @@ const Vegetables = ({selectVegetables}) => {
             isSelected: oignon
         }
     ]
+
+    let salade_style, tomate_style, oignon_style = '#e4d2b6';
+
+    (salade)? salade_style = '#e4d2b6' : salade_style = '#FFF6D6';
+    (tomate)? tomate_style = '#e4d2b6' : tomate_style = '#FFF6D6';
+    (oignon)? oignon_style = '#e4d2b6' : oignon_style = '#FFF6D6';
+
+
     return (
         <div className="column_center">
             <h2>Salade, Tomates, Oignons ?</h2>
             <div className="inline_blocks">
-                <button /*style={(salade)? 'border: solide 2px green' : ''}*/ className="block_btn" onClick={() => setSalade((salade)? false : true)}>
+                <button style={{backgroundColor: salade_style}} className="block_btn" onClick={() => setSalade((salade)? false : true)}>
                     <img width="86px" alt="salade" src={require('../../assets/icons/salade.png').default} />
                     <p>Salade</p>
                 </button>
-                <button /*style={(tomate)? 'border: solide 2px green' : ''}*/ className="block_btn" onClick={() => setTomate((tomate)? false : true)}>
+                <button style={{backgroundColor: tomate_style}} className="block_btn" onClick={() => setTomate((tomate)? false : true)}>
                     <img width="86px" alt="Tomate" src={require('../../assets/icons/tomate.png').default} />
                     <p>Tomates</p>
                 </button>
-                <button /*style={(oignon)? 'border: solide 2px green' : ''}*/ className="block_btn" onClick={() => setOignon((oignon)? false : true)}>
+                <button style={{backgroundColor: oignon_style}} className="block_btn" onClick={() => setOignon((oignon)? false : true)}>
                     <img width="86px" alt="Oignon" src={require('../../assets/icons/oignon.png').default} />
                     <p>Oignons</p>
                 </button>

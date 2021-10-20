@@ -1,5 +1,4 @@
 import '../../App.css';
-import pain from '../../assets/icons/pain.png'
 
 const KebabType = ({selectKebab, checkout}) => {
     return (

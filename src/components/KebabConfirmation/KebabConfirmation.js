@@ -15,7 +15,7 @@ const KebabConfirmation = ({kebab, kebabConfirmation }) => {
                     (sauce.isSelected)? <li key={sauce.sauceName}>{sauce.sauceName}</li> : ''
                 ))}
             </ul>
-            <button onClick={() => kebabConfirmation(kebab)}>Commander</button>
+            <button className="basic_btn" onClick={() => kebabConfirmation(kebab)}>Commander</button>
         </div>
     )
 }
