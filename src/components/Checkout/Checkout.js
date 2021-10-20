@@ -15,8 +15,8 @@ const Checkout = ({ checkout, deleteKebab, setQuantity }) => {
                     }
                     return (
                         <div>
-                            <li key="kebab">{kebab_string}</li>
-                            <li key="quantité">Quantité : {element.quantity} {minus_btn} <button onClick={() => setQuantity(element.id, 1)}>+</button></li>
+                            <li key={'id' + element.id}>{kebab_string}</li>
+                            <li key={'qte' + element.id}>Quantité : {element.quantity} {minus_btn} <button onClick={() => setQuantity(element.id, 1)}>+</button></li>
                             <button onClick={() => deleteKebab(element.id)}>Supprimer</button>
                         </div>
                     )

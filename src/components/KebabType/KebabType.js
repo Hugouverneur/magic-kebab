@@ -1,15 +1,20 @@
+import '../../App.css';
+import pain from '../../assets/icons/pain.png'
+
 const KebabType = ({selectKebab, checkout}) => {
     return (
-        <div className="">
+        <div className="column_center">
             <h2>Pain ou galette ?</h2>
-            <button className="" onClick={() => selectKebab('Pain')}>
-                <img alt="" src=""/>
-                <p>Pain</p>
-            </button>
-            <button onClick={() => selectKebab('Galette')}>
-                <img alt="" src=""/>
-                <p>Galette</p>
-            </button>
+            <div className="inline_blocks">
+                <button className="block_btn" onClick={() => selectKebab('Pain')}>
+                    <img width="86px" alt="pain" src={require('../../assets/icons/pain.png').default}/>
+                    <p>Pain</p>
+                </button>
+                <button className="block_btn" onClick={() => selectKebab('Galette')}>
+                    <img width="86px" alt="galette" src={require('../../assets/icons/galette.png').default}/>
+                    <p>Galette</p>
+                </button>
+            </div>
        </div>
 
     );

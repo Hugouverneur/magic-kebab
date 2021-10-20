@@ -130,7 +130,7 @@ class App extends React.Component {
       }
 
       return (
-        <div className="">
+        <div className="app_container">
           <Header />
           {component}
           {showCheckout}

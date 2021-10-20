@@ -1,15 +1,17 @@
 const Meat = ({selectMeat}) => {
     return (
-        <div className="">
+        <div className="column_center">
             <h2>Viande ou Tofu ?</h2>
-            <button className="" onClick={() => selectMeat('Viande')}>
-                <img alt="" src=""/>
-                <p>Viande</p>
-            </button>
-            <button onClick={() => selectMeat('Tofu')}>
-                <img alt="" src=""/>
-                <p>Tofu</p>
-            </button>
+            <div className="inline_blocks">
+                <button className="block_btn" onClick={() => selectMeat('Viande')}>
+                    <img width="86px" alt="viande" src={require('../../assets/icons/viande.png').default} />
+                    <p>Viande</p>
+                </button>
+                <button className="block_btn" onClick={() => selectMeat('Tofu')}>
+                    <img width="86px" alt="tofu" src={require('../../assets/icons/tofu.png').default} />
+                    <p>Tofu</p>
+                </button>
+            </div>
        </div>
     );
 }
