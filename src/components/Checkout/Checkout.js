@@ -1,7 +1,7 @@
 const Checkout = ({ checkout, deleteKebab, setQuantity }) => {
     return (
-        <div className="header">
-            <h2>Mon panier</h2>
+        <div className="checkout_block">
+            <h2>🛒 Mon panier</h2>
             <ul>
                 {checkout.map(function(element) {
                     let kebab_string = `${element.kebab.type}, ${element.kebab.meat}`;
@@ -11,14 +11,14 @@ const Checkout = ({ checkout, deleteKebab, setQuantity }) => {
                     
                     let minus_btn;
                     if(element.quantity > 1) {
-                        minus_btn = <button onClick={() => setQuantity(element.id, -1)}>-</button>
+                        minus_btn = <button className="basic_btn" onClick={() => setQuantity(element.id, -1)}>-</button>
                     }
                     return (
-                        <div>
-                            <li key={'id' + element.id}>{kebab_string}</li>
-                            <li key={'qte' + element.id}>Quantité : {element.quantity} {minus_btn} <button onClick={() => setQuantity(element.id, 1)}>+</button></li>
-                            <button onClick={() => deleteKebab(element.id)}>Supprimer</button>
-                        </div>
+                        <li key={element.id} className="checkout_line">
+                            <p>{kebab_string}</p>
+                            <p>Quantité : {element.quantity} {minus_btn} <button className="basic_btn" onClick={() => setQuantity(element.id, 1)}>+</button></p>
+                            <button className="basic_btn" onClick={() => deleteKebab(element.id)}>Supprimer</button>
+                        </li>
                     )
                 })}
             </ul>

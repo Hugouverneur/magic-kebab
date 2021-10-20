@@ -42,7 +42,32 @@
     transition: ease 0.2s;
 }
 
-.continu_btn:hover {
+.basic_btn {
+    padding: 4px 12px;
+    background-color: #4d0302;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 4px;
+    transition: ease 0.2s;
+}
+
+.continu_btn:hover, .basic_btn:hover {
     cursor: pointer;
     background-color: #4d0302c4;
+}
+
+.checkout_block {
+    background-color: #fffcef;
+    border-radius: 12px;
+    padding: 4px 16px;
+    margin: 12px;
+}
+
+.checkout_line p{
+    margin: 0px
+}
+
+.checkout_line {
+    margin-bottom: 16px;
 }
