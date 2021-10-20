@@ -1,4 +1,4 @@
-const Checkout = ({ checkout, deleteKebab, setQuantity }) => {
+const Checkout = ({ checkout, deleteKebab, setQuantity, Order }) => {
     return (
         <div className="checkout_block">
             <h2>🛒 Mon panier</h2>
@@ -22,6 +22,7 @@ const Checkout = ({ checkout, deleteKebab, setQuantity }) => {
                     )
                 })}
             </ul>
+            <button className="basic_btn" onClick={() => Order()}>Commander</button>
         </div>
     );
 }
