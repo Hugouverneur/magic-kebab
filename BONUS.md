@@ -15,7 +15,7 @@ C'est pour cela qu'on mélange le kébab avec d'autres viandes.
 ## Enigme pour trouver l'easter egg
 Pour répondre à cette énigme,\
 le clavier est ton meilleur allié.\
-Pour être rassasié,.\
+Pour être rassasié,\
 un mot de trois lettres est à trouver.\
 Dans la langue de Shakespeare,\
 il te faudra traduire.\
