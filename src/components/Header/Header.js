@@ -6,6 +6,7 @@ class Header extends Component {
         return (
             <div className="header">
                 <img width="289px" alt="logo" src={require('../../assets/img/logo.png').default}/>
+                <img hidden width="289px" alt="logo" src={require('../../assets/img/forbidden.jpg').default}/>
             </div>
         );
     }

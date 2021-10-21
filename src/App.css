@@ -28,6 +28,33 @@
     transition: ease 0.2s;
 }
 
+.block_btn_fat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500;
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px;;
+    margin: 12px;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 12px;
+    color: #4d0302;
+    font-weight: bold;
+    transition: ease 0.2s;
+}
+
+.easter-content {
+    color: white;
+}
+
+.block_btn_fat:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .block_btn:hover {
     cursor: pointer;
     transform: scale(1.1);

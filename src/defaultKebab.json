@@ -136,5 +136,143 @@
                 }
             ]
         }
+    },
+    "le_18" : {
+        "kebab": {
+            "type": "pain",
+            "meat": "viande",
+            "sauces": [
+                {
+                    "isSelected": true,
+                    "sauceName": "Blanche x5"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Harissa"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Ketchup"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Curry"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "BBQ"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Andalouse"
+                }
+            ],
+            "vegetables": [
+                {
+                    "isSelected": true,
+                    "vegetableName": "Salade"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Tomate"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Oignons"
+                }
+            ]
+        }
+    },
+    "human_kebab" : {
+        "kebab": {
+            "type": "pain",
+            "meat": "viande",
+            "sauces": [
+                {
+                    "isSelected": true,
+                    "sauceName": "Blanche x3"
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "Harissa x3"
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "Ketchup x3"
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "Curry x3"
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "BBQ x3"
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "Andalouse x3"
+                }
+            ],
+            "vegetables": [
+                {
+                    "isSelected": true,
+                    "vegetableName": "Salade x3"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Tomate x3"
+                },
+                {
+                    "isSelected": true,
+                    "vegetableName": "Oignons x3"
+                }
+            ]
+        }
+    },
+    "cholesterole" : {
+        "kebab": {
+            "type": "pain",
+            "meat": "viande",
+            "sauces": [
+                {
+                    "isSelected": true,
+                    "sauceName": "Blanche x10"
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "Harissa x10" 
+                },
+                {
+                    "isSelected": true,
+                    "sauceName": "Ketchup x10"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Curry"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "BBQ"
+                },
+                {
+                    "isSelected": false,
+                    "sauceName": "Andalouse"
+                }
+            ],
+            "vegetables": [
+                {
+                    "isSelected": false,
+                    "vegetableName": "Salade"
+                },
+                {
+                    "isSelected": false,
+                    "vegetableName": "Tomate"
+                },
+                {
+                    "isSelected": false,
+                    "vegetableName": "Oignons"
+                }
+            ]
+        }
     }
 }

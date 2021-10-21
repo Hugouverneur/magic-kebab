@@ -1,6 +1,6 @@
 import '../../App.css';
 
-const KebabType = ({selectKebab, checkout}) => {
+const KebabType = ({ selectKebab }) => {
     return (
         <div className="column_center">
             <h2>Pain ou galette ?</h2>
