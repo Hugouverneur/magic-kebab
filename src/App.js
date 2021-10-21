@@ -9,6 +9,7 @@ import KebabConfirmation from './components/KebabConfirmation/KebabConfirmation'
 import Checkout from './components/Checkout/Checkout';
 import DefaultKebab from './components/DefaultKebab/DefaultKebab';
 import Loader from './components/Loader/Loader';
+import FatKebab from './components/FatKebab/FatKebab'
 
 class App extends React.Component {
     constructor(props){
@@ -17,8 +18,11 @@ class App extends React.Component {
         kebab: {},
         checkout: [],
         page: 0,
-        error: "",      
+        error: "",
+        combination: "",      
       }
+
+      this.onKeyPress = this.onKeyPress.bind(this);
     }
 
     selectKebab = (kebabType) => {
@@ -68,9 +72,13 @@ class App extends React.Component {
 
     kebabConfirmation = (kebab) => {
       const checkout = this.state.checkout
+      document.body.style = 'background: #fff6d6;'
+      document.getElementsByClassName("header")[0].children[1].hidden = true
+      document.getElementsByClassName("header")[0].children[0].hidden = false
 
       this.setState({
         checkout: [...checkout, {kebab: kebab, quantity: 1, id: checkout.length}],
+        combination: "",
         page: 0 
       })
     }
@@ -105,6 +113,10 @@ class App extends React.Component {
     }
 
     orderCheckout = () => {
+      document.body.style = 'background: #fff6d6;'
+      document.getElementsByClassName("header")[0].children[1].hidden = true
+      document.getElementsByClassName("header")[0].children[0].hidden = false
+
       this.setState({
         checkout: [],
         page: 5
@@ -115,6 +127,29 @@ class App extends React.Component {
           page: 0
         })
       }, 4000);
+    }
+
+    onKeyPress(event){
+      const combination = this.state.combination
+      let key = event.keyCode
+      this.setState({
+        combination: combination+key
+      })
+
+      let code = this.state.combination
+
+      if(code.includes("706584")) {
+        this.setState({
+          page: 6
+        })
+      }
+    }
+
+    componentDidMount(){
+      document.addEventListener("keydown", this.onKeyPress, false);
+    }
+    componentWillUnmount(){
+      document.removeEventListener("keydown", this.onKeyPress, false);
     }
 
     render() {
@@ -134,7 +169,7 @@ class App extends React.Component {
           component = <Vegetables selectVegetables={this.selectVegetables} />
           break;
         case 3:
-          component = <Sauce selectSauces={this.selectSauces} tooManySauce={this.state.error} />
+          component = <Sauce selectSauces={this.selectSauces} tooManySauce={this.state.error}/>
           break;
         case 4:
           component = <KebabConfirmation kebabConfirmation={this.kebabConfirmation} kebab={this.state.kebab} kebabAnnulation={this.kebabAnnulation} />
@@ -142,6 +177,9 @@ class App extends React.Component {
         case 5:
           component = <Loader Order={this.orderCheckout} />
           break;
+        case 6:
+          component = <FatKebab addToCheckout={this.kebabConfirmation}/>
+          break
         default:
           component = <div>Erreur de chargement</div>
           console.log("Erreur")

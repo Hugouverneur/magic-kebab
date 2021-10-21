@@ -63,7 +63,7 @@ const Sauce = ({selectSauces, tooManySauce}) => {
                 </button>
                 <button style={{backgroundColor: bbq_style}} className="block_btn" onClick={() => setBBQ((BBQ)? false : true)}>
                     <img width="86px" alt="sauce bbq" src={require('../../assets/icons/sbbq.png').default} />
-                    <p>BBQ</p>
+                    <p className="easter-egg">BBQ</p>
                 </button>
                 <button style={{backgroundColor: ketchup_style}} className="block_btn" onClick={() => setKetchup((ketchup)? false : true)}>
                     <img width="86px" alt="ketchup" src={require('../../assets/icons/ketchup.png').default} />
