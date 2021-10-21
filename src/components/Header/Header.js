@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <h1>🥙 Magic Kebab</h1>
+                <img width="289px" alt="logo" src={require('../../assets/img/logo.png').default}/>
             </div>
         );
     }
