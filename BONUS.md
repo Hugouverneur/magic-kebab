@@ -21,4 +21,4 @@ Dans la langue de Shakespeare,.\
 il te faudra traduire..\
 Le mot qui désigne l'obésité..\
 Pour te voir offrir,.\
-Le repas que tu as toujours rêvé..\
+Le repas que tu as toujours rêvé.
