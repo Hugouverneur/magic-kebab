@@ -15,3 +15,10 @@ et non d’agneau. Saurez-vous me dire pourquoi ?
 ## Enigme pour trouver l'easter egg
 Pour répondre à cette énigme,
 le clavier est ton meilleur allié.
+Pour être rassasié,
+un mot de trois lettres est à trouver.
+Dans la langue de Shakespeare,
+il te faudra traduire.
+Le mot qui désigne l'obésité.
+Pour te voir offrir,
+Le repas que tu as toujours rêvé.
