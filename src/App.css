@@ -33,6 +33,28 @@
     transform: scale(1.1);
 }
 
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    /* padding: 7px 20px; */
+    background-color: transparent;
+    border: solid 2px #e4d2b6;
+    border-radius: 12px;
+    color: #4d0302;
+    font-weight: bold;
+    transition: ease 0.2s;
+}
+
+.in_block_el {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 20px;
+}
+
 .continu_btn {
     padding: 0px 18px;
     background-color: #4d0302;
