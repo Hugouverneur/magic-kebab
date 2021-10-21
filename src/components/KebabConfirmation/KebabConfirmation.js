@@ -11,22 +11,22 @@ const KebabConfirmation = ({kebab, kebabConfirmation, kebabAnnulation }) => {
                     <img width="86px" alt={kebab.meat} src={require('../../assets/icons/'+kebab.meat.toLowerCase()+'.png').default}></img>
                     <p>{kebab.meat}</p>
                 </div>
-                +
-                <div key="kebab_vegetables" className="">
+                <strong style={{fontSize: '32px'}}>+</strong>
+                <div key="kebab_vegetables" className="block">
                     {kebab.vegetables.map(vegetable => (
                         (vegetable.isSelected)? 
-                            <div className="block_btn" key={vegetable.vegetableName}>
+                            <div className="in_block_el" key={vegetable.vegetableName}>
                                 <img width="86px" alt={vegetable.vegetableName} src={require('../../assets/icons/'+vegetable.vegetableName.toLowerCase()+'.png').default}></img>
                                 <p>{vegetable.vegetableName}</p>
                             </div> 
                         : ''
                     ))}
                 </div>
-                +
-                <div key="kebab_sauces" className="">
+                <strong style={{fontSize: '32px'}}>+</strong>
+                <div key="kebab_sauces" className="block">
                     {kebab.sauces.map(sauce => (
                         (sauce.isSelected)?
-                            <div className="block_btn" key={sauce.sauceName}>
+                            <div className="in_block_el" key={sauce.sauceName}>
                                 <img width="86px" alt={sauce.sauceName} src={require('../../assets/icons/'+sauce.sauceName.toLowerCase()+'.png').default}></img>
                                 <p>{sauce.sauceName}</p>
                             </div>
