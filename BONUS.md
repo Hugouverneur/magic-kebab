@@ -9,7 +9,7 @@ son téléphone).
 - Ajoutez un easter egg (konami code ?) -> énigme en bas du fichier 😉
 - Aujourd’hui, la plupart des broches à kébab sont des mélanges de dinde et de poulet,
 et non d’agneau. Saurez-vous me dire pourquoi ?
-  -> A l'origine il y a uniquement de l'agneau dans un kebab. Mais au moment l'internationalisation du sandwich, les occidentaux trouvaient la viande trop forte.
+    A l'origine il y a uniquement de l'agneau dans un kebab. Mais au moment l'internationalisation du sandwich, les occidentaux trouvaient la viande trop forte.
     C'est pour cela qu'on mélange le kébab avec d'autres viandes.
 
 ## Enigme pour trouver l'easter egg
