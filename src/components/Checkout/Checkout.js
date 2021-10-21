@@ -4,7 +4,7 @@ const Checkout = ({ checkout, deleteKebab, setQuantity, Order }) => {
             <h2>🛒 Mon panier</h2>
             <ul>
                 {checkout.map(function(element) {
-                    let kebab_string = `${element.kebab.type}, ${element.kebab.meat}`;
+                    let kebab_string = `Kebab: ${element.kebab.type}, ${element.kebab.meat}`;
 
                     element.kebab.vegetables.forEach(vegetable => vegetable.isSelected ? kebab_string += ', '+vegetable.vegetableName : '')
                     element.kebab.sauces.forEach(sauce => sauce.isSelected ? kebab_string += ', '+sauce.sauceName : '')
@@ -16,8 +16,7 @@ const Checkout = ({ checkout, deleteKebab, setQuantity, Order }) => {
                     return (
                         <li key={element.id} className="checkout_line">
                             <p>{kebab_string}</p>
-                            <p>Quantité : {element.quantity} {minus_btn} <button className="basic_btn" onClick={() => setQuantity(element.id, 1)}>+</button></p>
-                            <button className="basic_btn" onClick={() => deleteKebab(element.id)}>Supprimer</button>
+                            <p>Quantité : x{element.quantity} {minus_btn} <button className="basic_btn" onClick={() => setQuantity(element.id, 1)}>+</button> / <button className="basic_btn" onClick={() => deleteKebab(element.id)}>Supprimer</button></p>   
                         </li>
                     )
                 })}

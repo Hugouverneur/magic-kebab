@@ -69,10 +69,15 @@ class App extends React.Component {
     kebabConfirmation = (kebab) => {
       const checkout = this.state.checkout
 
-      console.log(kebab)
-
       this.setState({
         checkout: [...checkout, {kebab: kebab, quantity: 1, id: checkout.length}],
+        page: 0 
+      })
+    }
+
+    kebabAnnulation = () => {
+      this.setState({
+        kebab: {},
         page: 0 
       })
     }
@@ -132,7 +137,7 @@ class App extends React.Component {
           component = <Sauce selectSauces={this.selectSauces} tooManySauce={this.state.error} />
           break;
         case 4:
-          component = <KebabConfirmation kebabConfirmation={this.kebabConfirmation} kebab={this.state.kebab} />
+          component = <KebabConfirmation kebabConfirmation={this.kebabConfirmation} kebab={this.state.kebab} kebabAnnulation={this.kebabAnnulation} />
           break;
         case 5:
           component = <Loader Order={this.orderCheckout} />

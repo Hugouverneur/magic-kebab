@@ -58,7 +58,7 @@ const Sauce = ({selectSauces, tooManySauce}) => {
                     <p>Harissa</p>
                 </button>
                 <button style={{backgroundColor: anda_style}} className="block_btn" onClick={() => setAndalouse((andalouse)? false : true)}>
-                    <img width="86px" alt="sauce andalouse" src={require('../../assets/icons/anda.png').default} />
+                    <img width="86px" alt="sauce andalouse" src={require('../../assets/icons/andalouse.png').default} />
                     <p>Andalouse</p>
                 </button>
                 <button style={{backgroundColor: bbq_style}} className="block_btn" onClick={() => setBBQ((BBQ)? false : true)}>
